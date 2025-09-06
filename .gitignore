@@ -2,15 +2,17 @@
 # Build Tools
 
 .gradle
-/build/
+front/build/
+**/node_modules/
 !gradle/wrapper/gradle-wrapper.jar
-
-target/
+**/target/
 db/
 doc/
 !.mvn/wrapper/maven-wrapper.jar
-
-out/
+**/out/
+*.tgz
+*.tar.gz
+*.zip
 
 ######################################################################
 # IDE
@@ -25,39 +27,43 @@ out/
 
 ### IntelliJ IDEA ###
 .idea
+back/.idea
 *.iws
 *.iml
 *.ipr
 
 ### NetBeans ###
 nbproject/private/
-build/*
+**/build/
 nbbuild/
-dist/
+**/dist/
 nbdist/
 .nb-gradle/
 
 ######################################################################
 # Others
+
 *.log
 *.xml.versionsBackup
 *.swp
 *.bat
 *.sql
-db/
-entity/
+**/entity/
+**/db/
+**/*.yml
+**/*.properties
+**/application*.yml
+**/application*.properties
 mapper/
 *.xml
-pojo/
-doc/
+**/pojo/
 *.doc
 *.docx
 video/
+**/redis/
+**/tool/
+tools/
 *.bak
-back/src/main/resources/mapper/
-front/build/
-front/src/views/
-image/
 
 !*/build/*.java
 !*/build/*.html
